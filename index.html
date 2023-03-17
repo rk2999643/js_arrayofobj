@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Q.1</h3>
+    <pre>let s = [{name:'John',id:123,marks:98},
+        {name:'Baba',id:101,marks:23},
+        {name:'yaga',id:200,marks:45},
+        {name:'wick',id:115,marks:75}]
+let ans = [];
+for(let i=0;s.length>i;i++){
+ans.push(s[i].name.toUpperCase())
+}                
+console.log(ans);</pre>
+<h3>Q.2</h3>
+<pre> let s = [{name:'John',id:123,marks:98},
+    {name:'Baba',id:101,marks:23},
+    {name:'yaga',id:200,marks:45},
+    {name:'wick',id:115,marks:75}]
+let ans = [];
+for(let i=0;s.length>i;i++){
+if(s[i].marks>50){
+ans.push(s[i]);
+}
+}
+console.log(ans);</pre>
+<h3>Q.3</h3>
+<pre>let s = [{name:'John',id:123,marks:98},
+    {name:'Baba',id:101,marks:23},
+    {name:'yaga',id:200,marks:45},
+    {name:'wick',id:115,marks:75}]
+let ans = [];
+for(let i=0;s.length>i;i++){
+if((s[i].marks>50) && (s[i].id>120)){
+ans.push(s[i]);
+}
+}
+console.log(ans);</pre>
+<h3>Q.4
+</h3>
+<pre>let s = [{name:'John',id:123,marks:98},
+    {name:'Baba',id:101,marks:23},
+    {name:'yaga',id:200,marks:45},
+    {name:'wick',id:115,marks:75}]
+let ans = [];
+let a=0;
+for(let i=0;s.length>i;i++){
+a+=s[i].marks
+
+}
+console.log(a);</pre>
+<h3>Q.5</h3>
+<pre> let s = [{name:'John',id:123,marks:98},
+    {name:'Baba',id:101,marks:23},
+    {name:'yaga',id:200,marks:45},
+    {name:'wick',id:115,marks:75}]
+let ans = [];
+for(let i=0;s.length>i;i++){
+if(s[i].marks>50){
+ans.push(s[i].name);
+}
+}
+console.log(ans);</pre>
+  <h3>Q.6</h3>
+  <pre>let s = [{name:'John',id:123,marks:98},
+    {name:'Baba',id:101,marks:23},
+    {name:'yaga',id:200,marks:45},
+    {name:'wick',id:115,marks:75}]
+let ans = [];
+let a=0;
+for(let i=0;s.length>i;i++){
+if(s[i].id>120){
+a+=s[i].marks;
+}
+}
+console.log(a);</pre>
+<h3>Q.7</h3>
+<pre>let s = [{name:'John',id:123,marks:98},
+    {name:'Baba',id:101,marks:23},
+    {name:'yaga',id:200,marks:45},
+    {name:'wick',id:115,marks:75}]
+let ans = [];
+let a=0;
+for(let i=0;s.length>i;i++){
+if(50>s[i].marks){
+s[i].marks+=15;
+}
+if(s[i].marks>50)
+a+=s[i].marks;
+}
+console.log(a);</pre>
+<h3>Q.8</h3>
+<pre>
+    let a = [];
+function student(name, clas, rollno){
+    this.name = name;
+    this.class = clas;
+    this.name = rollno;
+  }
+ a[0] = new student("Ratan","1","22");
+a[1] = new student("Ratan2","2","23");
+a[2] = new student("Ratan3","3","24");
+a[3] = new student("Ratan4","4","25");
+a[4] = new student("Ratan5","5","26");
+a[5] = new student("Ratan6","6","27");
+for(i=0;6>i;i++){
+    console.log(a[i]);
+       
+}
+</pre>
+</body>
+</html>
